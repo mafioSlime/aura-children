@@ -154,3 +154,13 @@ textarea {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media (min-width: 800px) {
+  .tagline h1 {
+    font-size: 3rem;
+  }
+
+  .tagline p {
+    font-size: 1.5rem;
+  }
+}

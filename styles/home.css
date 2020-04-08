@@ -75,3 +75,13 @@
 .tagline-links a:hover {
   border-color: #886f68;
 }
+
+@media (min-width: 800px) {
+  .tagline h1 {
+    font-size: 3rem;
+  }
+
+  .tagline p {
+    font-size: 1.5rem;
+  }
+}

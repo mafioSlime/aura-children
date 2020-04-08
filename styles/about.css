@@ -108,17 +108,20 @@ h3:first-letter {
 }
 
 .card {
-  width: 90%;
-  margin: 0rem auto 3rem;
+  width: 100%;
+  margin: 0rem auto 10rem;
 }
 .card img {
   width: 100%;
   margin-bottom: 1.5rem;
+  object-fit: contain;
 }
 
 .card p {
   font-size: 1.1rem;
   color: #333;
+  line-height: 2rem;
+  text-align: center;
 }
 
 .founders-title,
@@ -135,25 +138,45 @@ img {
   height: 380px;
 }
 
-@media (min-width: 800px) {
+.left {
+  text-align: left;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #0b3a2d;
+}
+
+@media (min-width: 700px) {
   .about-content-container .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-gap: 1rem;
   }
+}
 
-  .founders-container,
-  .instructor-container {
+@media (min-width: 800px) {
+  .founders-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .tagline h1 {
+    font-size: 3rem;
+  }
+
+  .tagline p {
+    font-size: 1.5rem;
   }
 }
 
-@media (min-width: 1000px) {
-  .founders-container,
-  .instructor-container {
+@media (min-width: 1300px) {
+  .instructor-container .card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
   }
 }
