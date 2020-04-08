@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #faf6f8;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* FAF6F8 - Background colour
+04140F - Paragraph colours (not included, but it's the green darker)
+30223D - Header colour
+7D98A1 - Subheader colour
+07231B and 886F68 - Accent colours for box's, buttons, hovers, etc.
+Rufina - Headers
+Montserrat - Subheaders, Nav bar
+Maitree - Paragraph
+*/
