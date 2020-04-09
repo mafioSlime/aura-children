@@ -84,6 +84,31 @@ a {
   }
 }
 
+@media (min-width: 620px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+footer {
+  height: 15vh;
+  background-color: #30223d;
+  color: #fff;
+  text-align: center;
+  font-style: initial;
+}
+
+footer div {
+  padding: 1rem;
+}
+
+footer a {
+  color: #fff;
+  margin: auto 0.5rem;
+}
+
 /* FAF6F8 - Background colour
 04140F - Paragraph colours (not included, but it's the green darker)
 30223D - Header colour
