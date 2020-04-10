@@ -1,46 +1,6 @@
-h3 {
-  letter-spacing: 2px;
-  margin-bottom: 0.8rem;
-  font-size: 1.3rem;
-  color: #000;
-}
-
 h3:first-letter {
   font-size: 2.5rem;
   color: #7d98a1;
-}
-
-.nav-bar {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 15vh;
-  align-items: center;
-  text-align: center;
-}
-
-.logo {
-  flex: 1 1 20rem;
-  letter-spacing: 2px;
-  font-weight: lighter;
-}
-
-.logo img {
-  width: 50px;
-  height: auto;
-}
-
-.main-nav {
-  display: flex;
-  justify-content: space-evenly;
-  flex: 1 1 20rem;
-}
-
-.main-nav a {
-  color: #fff;
-}
-
-.main-nav a:hover {
-  color: #886f68;
 }
 
 .about-banner {
@@ -54,49 +14,6 @@ h3:first-letter {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.tagline {
-  color: #fff;
-  font-weight: lighter;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 70vh;
-  letter-spacing: 2px;
-}
-
-.tagline h1 {
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-}
-
-.tagline a {
-  color: #fff;
-  margin-top: 1rem;
-  border: 1px solid #fff;
-  padding: 0.5rem;
-}
-
-.tagline a:hover {
-  border-color: #886f68;
-}
-
-.tagline-links {
-  margin-top: 2rem;
-}
-
-.tagline-links a {
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 0.5rem;
-  margin: auto 1rem;
-}
-
-.tagline-links a:hover {
-  border-color: #886f68;
 }
 
 .about-content-container {
@@ -159,16 +76,6 @@ h4 {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-gap: 1rem;
-  }
-}
-
-@media (min-width: 800px) {
-  .tagline h1 {
-    font-size: 3rem;
-  }
-
-  .tagline p {
-    font-size: 1.5rem;
   }
 }
 
