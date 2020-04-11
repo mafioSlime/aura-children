@@ -105,4 +105,12 @@
     grid-gap: 1rem;
     align-items: center;
   }
+
+  .card:nth-child(2) .content2 {
+    order: 1;
+  }
+
+  .card:nth-child(4) .content2 {
+    order: 1;
+  }
 }
