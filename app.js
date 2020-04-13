@@ -70,6 +70,58 @@ const turtle = {
   image: "images/turtle.jpg",
 };
 
+const owl = {
+  info:
+    "The owl spirit animal is emblematic of a deep connection with wisdom and intuitive knowledge. If you have the owl as totem or power animal, you’re likely to have the ability to see what’s usually hidden to most. When the spirit of this animal guides you, you can see the true reality, beyond illusion and deceit. The owl also offers for those who have it a personal totem the inspiration and guidance necessary to deeply explore the unknown and the magic of life.",
+  name: "Owl",
+  symbolize1: "Intuition, ability to see what others do not see",
+  symbolize2: "The presence of the owl announces change",
+  symbolize3: "Capacity to see beyond deceit and masks",
+  symbolize4: "Wisdom",
+  image: "images/owl.jpg",
+};
+
+const butterfly = {
+  info:
+    "The butterfly is one of the most emblematic totem animals symbolizing personal transformation. If you see the butterfly as your totem or spirit animal, pay attention to the areas in your life or personality that are in need of profound change or transformation. Perhaps, this animal totem guides you to be sensitive to your personal cycles of expansion and growth, as well as the beauty of life’s continuous unfolding. An important message carried by the spirit of the butterfly is about the ability to go through important changes with grace and lightness.",
+  name: "Butterfly",
+  symbolize1:
+    "Powerful transformation, metamorphosis in your life, personality",
+  symbolize2: "Moving through different life cycles",
+  symbolize3: "Renewal, rebirth",
+  symbolize4:
+    "Elevation from earthly matters, tuning into emotional or spiritual",
+  image: "images/butterfly.jpg",
+};
+
+const eagle = {
+  info:
+    "The Eagle spirit animal is an inspiring messenger. With the ability to soar to heights other birds merely dream of, the Eagle is a powerful animal totem that offers lessons about looking closely at the most minute of details in order to see life from a broader perspective. When this graceful hunter comes into your life, it’s time to look inward with a careful eye. Allow your heart to guide you, and opportunities you never dreamed were possible will present themselves when you least expect it. Eagles have feet with four toes. Four is a symbol for having a solid foundation and being grounded. Those who are guided by the Eagle spirit animal are grounded. Even though the Eagle can soar to great heights, they are still strongly connected to the earth. Among being grounded and connected to the earth, those guided by the Eagle are also resilient and in complete harmony with the spiritual aspects of their lives. Unafraid of the unknown, these seekers accept life’s challenges with unshakable courage, determination and confidence.",
+  name: "Eagle",
+  symbolize1: "Intuition",
+  symbolize2: "Vision",
+  symbolize3: "Hope",
+  symbolize4: "Sexual Power",
+  image: "images/eagle.jpg",
+};
+
+const hawk = {
+  info:
+    "When you have the hawk as a spirit animal, you may have an inclination towards using the power of vision and intuition in your daily life. The hawk totem provides wisdom about seeing situations from a higher perspective, using the power of observation, and focusing on the task at hand. It’s a good companion to develop spiritual awareness.",
+  name: "Hawk",
+  symbolize1: "Hawk is the messenger of the spirit world",
+  symbolize2: "Take the lead when the time is right",
+  symbolize3: "Power to see, clear vision",
+  symbolize4: "Strong connection with spirit, increased spiritual awareness",
+  image: "images/hawk.jpg",
+};
+
+const displayDefault = () => {
+  spiritAnimalContainer.innerHTML = `
+  <h3>Choose A Spirit Animal From The Option Above</h3>
+  `;
+};
+
 const displayAnimal = (animal) => {
   spiritAnimalContainer.innerHTML = `
   <img src=${animal.image} alt=${animal.name}> 
@@ -96,9 +148,21 @@ const selectAnimal = () => {
     displayAnimal(bear);
   } else if (spiritAnimalBox.value === "turtle") {
     displayAnimal(turtle);
+  } else if (spiritAnimalBox.value === "owl") {
+    displayAnimal(owl);
+  } else if (spiritAnimalBox.value === "butterfly") {
+    displayAnimal(butterfly);
+  } else if (spiritAnimalBox.value === "eagle") {
+    displayAnimal(eagle);
+  } else if (spiritAnimalBox.value === "hawk") {
+    displayAnimal(hawk);
+  } else {
+    displayAnimal(bear);
   }
 };
 
 button.addEventListener("click", () => {
   selectAnimal();
 });
+
+displayDefault();
