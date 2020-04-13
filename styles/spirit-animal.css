@@ -1,0 +1,78 @@
+.spirit-animal-banner {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/sa-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.spirit-animal-container {
+  max-width: 90%;
+  margin: 5rem auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.spirit-animal-label {
+  font-size: 1.2rem;
+}
+
+button {
+  display: block;
+  margin: 1rem auto;
+  background-color: #886f68;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+img {
+  width: 350px;
+  height: 300px;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  margin: 2rem auto;
+}
+
+.animal-info {
+  text-align: left;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #333;
+}
+
+.spirit-animal-content {
+  margin: 3rem auto;
+}
+
+.symbol-bullets li {
+  list-style-type: circle;
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 2rem;
+  margin: 1rem auto;
+  color: #333;
+}
