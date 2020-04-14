@@ -27,6 +27,33 @@ a {
   color: black;
   text-decoration: none;
 }
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: arial;
+}
+
+ul li {
+  float: left;
+  width: 200px;
+  height: 40px;
+  opacity: 0.8;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+
+ul li ul li {
+  display: none;
+  background-color: #04140f;
+}
+
+ul li:hover ul li {
+  display: block;
+}
+
 .logo img {
   width: 50px;
   height: auto;
@@ -163,6 +190,10 @@ a {
     width: 35%;
     transition: 0.1s ease-in;
     z-index: 2;
+  }
+  ul li ul li {
+    display: none;
+    background-color: transparent;
   }
 }
 

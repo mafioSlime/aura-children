@@ -1,0 +1,293 @@
+/*********
+Fonts 
+**********/
+
+@import url("https://fonts.googleapis.com/css2?family=Maitree&family=Montserrat&family=Rufina&display=swap");
+
+/* font-family: 'Rufina', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Maitree', serif; */
+
+/**********
+General
+***********/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #faf6f8;
+  color: #04140f;
+  width: 100vw;
+  height: 100vh;
+}
+
+img {
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+  font-family: "Maitree", serif;
+}
+
+h1 {
+  color: #886f68;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 > span {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+p {
+  font-family: "Rufina", serif;
+  line-height: 1.6rem;
+}
+
+/***********
+Utilities 
+************/
+
+.title {
+  text-align: center;
+}
+
+#image {
+  height: 50vh;
+  margin: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tarotMeaning {
+  max-width: 75ch;
+}
+
+/*********
+Buttons 
+**********/
+
+.btn {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: solid #886f68 5px;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #886f68;
+  background-color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 #886f68;
+  transform: translateY(-1px);
+  /* transition: transform 150ms; */
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.disclaimer {
+  margin-top: 3rem;
+}
+
+.disclaimer a {
+  text-decoration: none;
+  color: #886f68;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #faf6f8;
+  color: #333;
+  letter-spacing: 1px;
+  overflow-x: hidden;
+}
+
+h3 {
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: arial;
+}
+
+ul li {
+  float: left;
+  width: 200px;
+  height: 40px;
+  opacity: 0.8;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+
+ul li ul li {
+  display: none;
+  background-color: #04140f;
+}
+
+ul li:hover ul li {
+  display: block;
+}
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 15vh;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(7, 35, 27, 0.9);
+  margin-bottom: 7rem;
+}
+
+.logo {
+  flex: 1 1 20rem;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1 1 20rem;
+}
+
+.main-nav a {
+  color: #fff;
+}
+
+.main-nav a:hover {
+  color: #886f68;
+}
+
+.hamburger {
+  position: fixed;
+  cursor: pointer;
+  top: 5%;
+  right: 5%;
+  z-index: 4;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #999;
+  margin-bottom: 7px;
+  transition: 0.2s ease-in;
+}
+
+/* HAMBURGER MENU ANIMATIONS */
+
+.active {
+  transform: translateX(-100%);
+}
+
+.toggle .line1 {
+  transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+/**************
+Media Queries
+***************/
+
+@media screen and (max-width: 710px) {
+  .controls {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 910px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 909px) {
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    background-color: rgba(7, 35, 27, 0.9);
+    height: 100vh;
+    width: 35%;
+    transition: 0.1s ease-in;
+    z-index: 2;
+  }
+
+  ul li ul li {
+    display: none;
+    background-color: transparent;
+  }
+}

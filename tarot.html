@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/tarot.css" />
+    <title>Tarot Card Game</title>
+  </head>
+
+  <header class="home-banner">
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="images/logo-1.png" alt="" />
+      </div>
+      <ul class="main-nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="workshop.html">Workshops </a></li>
+        <li><a href="connect.html">Connect</a></li>
+        <li>
+          <a href="#">Apps</a>
+          <ul>
+            <li><a href="spirit-animal.html">Spirit Animal</a></li>
+            <li><a href="tarot.html">Tarot Cards</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <main class="wrapper">
+      <h1 class="title">What does your future hold?</h1>
+
+      <div class="container">
+        <h2 id="tarotTitle"></h2>
+
+        <img
+          id="image"
+          src="./img/titleCard.jpg"
+          alt="A picture of a Tarot Card"
+        />
+
+        <p id="tarotMeaning">
+          Use the "Pull A Card" button to look into the future.
+        </p>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="pullCard">Pull A Card</button>
+        <a href="./"><button class="btn">Return Home</button></a>
+      </div>
+
+      <p class="disclaimer">
+        Card descriptions from <a href="https://www.tarot.com/">tarot.com</a>
+      </p>
+    </main>
+
+    <script src="tarot.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
