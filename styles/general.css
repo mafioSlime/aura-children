@@ -146,13 +146,13 @@ a {
   transform: rotateZ(405deg) translate(-8px, -6px);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 910px) {
   .hamburger {
     display: none;
   }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 909px) {
   .main-nav {
     position: fixed;
     top: 0;

@@ -20,6 +20,8 @@ const lion = {
   symbolize4:
     "Lion spirit animals warn about a threatening situation or event in your life",
   image: "images/lion.jpg",
+  dream: `This lion dream scenario is classic. Dreaming of being chased by a lion is one of the most common themes featuring this creature in the dream world. The lion chasing you generally connects to the struggle the dreamer is experiencing regarding feelings of anger or aggression in waking life.
+The dream about your lion spirit animal could point to anger you may feel towards someone or aggression that is directed at you. Being chased by a lion in a dream could be a warning from your animal totem that you’re struggling with these feelings and how to express them. The lion totem could mean that you’re having difficulties dealing with a situation where someone is mean or aggressive with you.`,
 };
 
 const wolf = {
@@ -31,6 +33,11 @@ const wolf = {
   symbolize3: "Expression of strong instincts",
   symbolize4: "Feeling threatened, lack of trust in someone or in yourself",
   image: "images/wolf.jpg",
+  dream: `The dream meanings associated with the wolf point to powerful instincts or habits that could be experienced as aggressive or dominating by others. Wolves in dreams convey the energetic imprint of strong sexual energy or addictive behaviors of different kinds that would benefit from being kept in check.
+
+If a woman dreams of a wolf in a nightmare or anxious dream, she may be getting in touch with anxiety relating to a male partner who may be pushing his sexual desires very strongly or pushing her boundaries. The intensity of the relationship can cause fear and be experienced as a threat that the wolf symbolizes in the dream.
+
+If the dream has a positive tone or outcome, the wolf could be interpreted as a guiding symbol for trusting your instincts more or expressing them in a more balanced manner. If you have such a dream, ask yourself if you feel at ease and supported by your instincts, especially your sexuality or a partner’s sexual expression, or other types of “cravings” in your life.`,
 };
 
 const panther = {
@@ -42,6 +49,9 @@ const panther = {
   symbolize3: "Symbol of the feminine",
   symbolize4: "Death and rebirth",
   image: "images/panther.jpg",
+  dream: `While some interpretations of the panther interpret it as a symbol of an enemy, the panther is also a symbol of the protector. Panther can be a powerful ally that can protect you in the dream realms.
+
+Panther embodies not only power, strength and courage, but grace and beauty as well. The panther may be reminding you to find and check in with these qualities yourself. If you are a woman, panther may be reminding you that you do indeed posses the characteristics as panther herself is often a symbol of the feminine. Can you embody beauty and grace at the same time as strength, power and courage?`,
 };
 
 const bear = {
@@ -56,6 +66,8 @@ const bear = {
   symbolize4:
     "The bear medicine emphasizes the importance of solitude, quiet time, rest",
   image: "images/bear.jpg",
+  dream:
+    "Dreams are our subconscious minds communicating to us using the language of symbols. Dreaming of bears (or a bear) symbolizes power, strength and protection of yourself or possibly your family. If the bear in your dream is hibernating, it may indicate a need for solitude and to get away. If the bear is dancing, it indicates good luck (or you are having flashbacks of one of those many past Grateful Dead shows you went to). If a bear is chasing you, it may mean that you are avoiding a big situation in your life and it is time to take a stand and deal with it. Bear showing up in your dream may also be a message that it is time to show your power to the world.",
 };
 
 const turtle = {
@@ -68,6 +80,8 @@ const turtle = {
   symbolize3: "Slowing down, pacing yourself",
   symbolize4: "Ancient wisdom",
   image: "images/turtle.jpg",
+  dream: `Turtles are known for taking it slow……real slow! If turtle shows up in your dreams, it may be telling you it’s time to slow down for a while.Are you moving too fast? Pushing too hard?
+The turtle also has a hard shell that it retreats into when presented with danger.If your dream turtle is hiding in its shell, it could be a warning that danger is approaching.However it could also be a message about coming out of your shell.In what ways have you been hiding? It may very well be time for you to come out and share your gifts with the world!`,
 };
 
 const owl = {
@@ -79,6 +93,13 @@ const owl = {
   symbolize3: "Capacity to see beyond deceit and masks",
   symbolize4: "Wisdom",
   image: "images/owl.jpg",
+  dream: `When you dream about an owl, your spirit animal may be contacting you to warn you about a danger or threat hat you need to pay attention to. It can bring a wise insight about important matters that you should not ignore.
+
+When an owl appears in a dream, it could also mean that the intuitive part of you is calling for attention: Pay attention and listen to the subtle signs in your life, to what is important, but not necessarily obviously so.
+
+The owl could also be a animal spirit guide offering you insight about a moment of transition. Since this totem animal is often associated with death, when an owl shows up in a dream, it could mean that you are receiving guidance regarding personal transformation, change.
+
+In many dream interpretations, the owl can represent a deceased friend or family member who comes back in the dream in the shape of a spirit animal.`,
 };
 
 const butterfly = {
@@ -92,6 +113,8 @@ const butterfly = {
   symbolize4:
     "Elevation from earthly matters, tuning into emotional or spiritual",
   image: "images/butterfly.jpg",
+  dream:
+    "Dreams are our subconscious minds communicating to us using the language of symbols. The classic interpretation of a butterfly in your dreams is that of transformation. Did the dream start with a caterpillar, cocoon or butterfly? The key to its meaning of transformation depends on where in the life cycle the butterfly is. Associated with the idea of transformation is also rebirth and transmutation of energy. The butterfly can also symbolize freedom, expansion and full self expression. Lastly, the butterfly may symbolize social success.",
 };
 
 const eagle = {
@@ -103,6 +126,8 @@ const eagle = {
   symbolize3: "Hope",
   symbolize4: "Sexual Power",
   image: "images/eagle.jpg",
+  dream:
+    "To see an Eagle in your dreams is essentially a call for introspection and self-examination. To dream of a soaring Eagle means it’s time to listen more closely to your inner voice — or intuition. To watch this power animal going from a perched stance to flight is indicative of your ability to rise above your situation, take a broader view of your circumstances, and allow your higher consciousness to guide you. However, if the power animal is diving or swooping, it can mean deception. Be mindful that everything you do comes back around, so try not to harm others in your pursuit to improve your circumstances. And if the Eagle is on the offensive and attacks, it is time to reevaluate your perceived limitations and self-imposed boundaries. You could very well be what’s holding you back.",
 };
 
 const hawk = {
@@ -114,6 +139,9 @@ const hawk = {
   symbolize3: "Power to see, clear vision",
   symbolize4: "Strong connection with spirit, increased spiritual awareness",
   image: "images/hawk.jpg",
+  dream: `Hawks are messengers and dreaming about a hawk may signify that something or someone is trying to send you a message. Are you listening? Are you paying attention?
+  As the hawk glides through the air high in the sky, it reminds you to see things from a higher perspective. Can you connect to the magic of life? Are you accessing your intuition?
+  The hawk is also a symbol of leadership. It was believed that if you followed the hawk, you would be traveling on the right path.`,
 };
 
 const displayDefault = () => {
@@ -134,6 +162,9 @@ const displayAnimal = (animal) => {
   <li>${animal.symbolize3}</li>
   <li>${animal.symbolize4}</li>
   </ul>
+  <h4>${animal.name} In Your Dream Meaning:</h4>
+  <p class="animal-dream">${animal.dream}</p>
+  
   `;
 };
 
