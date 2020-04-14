@@ -1,6 +1,6 @@
-/*********
-Fonts 
-**********/
+/********
+Fonts
+*********/
 
 @import url("https://fonts.googleapis.com/css2?family=Maitree&family=Montserrat&family=Rufina&display=swap");
 
@@ -8,9 +8,9 @@ Fonts
 font-family: 'Montserrat', sans-serif;
 font-family: 'Maitree', serif; */
 
-/**********
-General
-***********/
+/***********
+General 
+************/
 
 * {
   box-sizing: border-box;
@@ -21,12 +21,6 @@ General
 body {
   background-color: #faf6f8;
   color: #04140f;
-  width: 100vw;
-  height: 100vh;
-}
-
-img {
-  display: inline-block;
 }
 
 h1,
@@ -39,6 +33,7 @@ h4 {
 
 h1 {
   color: #886f68;
+  margin-bottom: 5rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -47,6 +42,7 @@ h1 > span {
 }
 
 h2 {
+  margin-bottom: 4rem;
   font-weight: 700;
 }
 
@@ -56,25 +52,16 @@ h3 {
 
 p {
   font-family: "Rufina", serif;
-  line-height: 1.6rem;
 }
 
 /***********
 Utilities 
 ************/
 
-.title {
-  text-align: center;
-}
-
-#image {
-  height: 50vh;
-  margin: 2rem;
-}
-
-.wrapper {
+.container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 80rem;
@@ -82,21 +69,35 @@ Utilities
   padding: 2rem;
 }
 
-.container {
-  margin: 2rem;
+.container > * {
+  width: 100%;
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.flex-center {
   justify-content: center;
   align-items: center;
 }
 
-#tarotMeaning {
-  max-width: 75ch;
+.justify-center {
+  justify-content: center;
 }
 
-/*********
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/********
 Buttons 
-**********/
+*********/
 
 .btn {
   font-size: 1.4rem;
@@ -114,7 +115,6 @@ Buttons
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 #886f68;
   transform: translateY(-1px);
-  /* transition: transform 150ms; */
 }
 
 .btn[disabled]:hover {
@@ -123,20 +123,14 @@ Buttons
   transform: none;
 }
 
-.disclaimer {
-  margin-top: 3rem;
-}
+/***********
+End game page 
+************/
 
-.disclaimer a {
-  text-decoration: none;
-  color: #886f68;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+#end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {

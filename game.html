@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="./css/game.css">
+  <title>Are You a Supreme Being of Light?</title>
+</head>
+
+<body>
+
+  <header class="home-banner">
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="images/logo-1.png" alt="" />
+      </div>
+      <ul class="main-nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="workshop.html">Workshops </a>
+        <ul>
+          <li><a href="https://aura-children-workshops.netlify.com/" target="_blank">Booking</a></li>
+        </ul></li>
+        <li><a href="connect.html">Connect</a></li>
+        <li>
+          <a href="#">Apps</a>
+          <ul>
+            <li><a href="spirit-animal.html">Spirit Animal</a></li>
+            <li><a href="tarot.html">Tarot Cards</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <div id="loader"></div>
+    <div id="game" class="justify-center flex-column hidden">
+
+      <div class="displays">
+
+        <div class="hud">
+          <div class="hud-item">
+            <p id="progressText" class="hud-prefix">
+              Question
+            </p>
+            <!-- <h1 class="hud-main-text" id="questionCounter"> -->
+            <div id="progressBar">
+              <div id="progressBarFull">
+
+              </div>
+            </div>
+            </h1>
+          </div>
+        </div>
+
+        <div class="hud">
+          <div class="hud-item">
+            <p class="hud-prefix">
+              score
+            </p>
+            <h1 class="hud-main-text" id="score">
+              0
+            </h1>
+          </div>
+        </div>
+
+      </div>
+
+      <main class="wrapper">
+
+        <h2 id="question"></h2>
+
+        <div class="choice-container">
+          <p class="choice-prefix">A</p>
+          <p class="choice-text" data-number="1"></p>
+        </div>
+
+        <div class="choice-container">
+          <p class="choice-prefix">B</p>
+          <p class="choice-text" data-number="2"></p>
+        </div>
+
+        <div class="choice-container">
+          <p class="choice-prefix">C</p>
+          <p class="choice-text" data-number="3"></p>
+        </div>
+
+        <div class="choice-container">
+          <p class="choice-prefix">D</p>
+          <p class="choice-text" data-number="4"></p>
+        </div>
+
+      </main>
+
+    </div>
+
+  </div>
+
+  <script src="./js/game.js"></script>
+  <script src="./app.js"></script>
+
+</body>
+
+</html>

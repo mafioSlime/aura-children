@@ -1,142 +1,113 @@
-/*********
-Fonts 
-**********/
-
-@import url("https://fonts.googleapis.com/css2?family=Maitree&family=Montserrat&family=Rufina&display=swap");
-
-/* font-family: 'Rufina', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Maitree', serif; */
-
-/**********
-General
-***********/
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #faf6f8;
-  color: #04140f;
-  width: 100vw;
-  height: 100vh;
-}
-
-img {
-  display: inline-block;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin-bottom: 1rem;
-  font-family: "Maitree", serif;
-}
-
-h1 {
-  color: #886f68;
-  font-family: "Montserrat", sans-serif;
-}
-
-h1 > span {
-  font-weight: 500;
-}
-
-h2 {
-  font-weight: 700;
-}
-
-h3 {
-  font-weight: 500;
-}
-
-p {
-  font-family: "Rufina", serif;
-  line-height: 1.6rem;
-}
-
-/***********
-Utilities 
-************/
-
-.title {
-  text-align: center;
-}
-
-#image {
-  height: 50vh;
-  margin: 2rem;
-}
+/*******************
+Choice Containers
+********************/
 
 .wrapper {
+  width: 80vw;
+  margin: auto;
+}
+
+.choice-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.container {
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#tarotMeaning {
-  max-width: 75ch;
-}
-
-/*********
-Buttons 
-**********/
-
-.btn {
-  font-size: 1.4rem;
-  padding: 1rem 0;
-  width: 20rem;
-  text-align: center;
-  border: solid #886f68 5px;
-  margin-bottom: 1rem;
-  text-decoration: none;
-  color: #886f68;
+  margin-bottom: 0.5rem;
+  width: 90%;
+  max-width: 40rem;
+  border: 1px solid #7d98a1;
   background-color: white;
 }
 
-.btn:hover {
+.choice-container:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 #886f68;
+  box-shadow: 0 0.4rem 1.4rem 0 #7d98a1;
   transform: translateY(-1px);
-  /* transition: transform 150ms; */
 }
 
-.btn[disabled]:hover {
-  cursor: not-allowed;
-  box-shadow: none;
-  transform: none;
+.choice-prefix {
+  padding: 0.5rem 0.8rem;
+  background-color: #30223d;
+  color: white;
 }
 
-.disclaimer {
-  margin-top: 3rem;
+.choice-text {
+  padding: 0.5rem;
+  width: 100%;
 }
 
-.disclaimer a {
-  text-decoration: none;
-  color: #886f68;
+/*******************
+Choice bar colors 
+********************/
+
+.correct {
+  background-color: #9be2ac;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+.incorrect {
+  background-color: #e6747f;
+}
+
+/***********
+HUD 
+************/
+
+.displays {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hud {
+  padding-bottom: 1rem;
+}
+
+.hud h1 {
+  margin: 0 auto;
+}
+
+.hud-prefix {
+  text-align: center;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+/***********
+Progress Bar 
+************/
+
+#progressBar {
+  width: 9rem;
+  height: 1.5rem;
+  border: solid 1px #886f68;
+  margin-top: 0.5rem;
+}
+
+#progressBarFull {
+  height: 1.5rem;
+  background-color: #886f68;
+  width: 0%;
+}
+
+/*************
+Loading Icon
+**************/
+
+/* from https://www.w3schools.com/howto/howto_css_loader.asp - with modifications */
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #7d98a1;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 a {
