@@ -48,16 +48,16 @@ button:hover {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #30223d;
 }
 
 h3::first-letter {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #402d52;
 }
 h4 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: lighter;
   margin: 2rem auto;
   color: #7d98a1;
@@ -78,7 +78,7 @@ h4 {
 
 .symbol-bullets li {
   list-style-type: circle;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: left;
   line-height: 2rem;
   margin: 1rem auto;
