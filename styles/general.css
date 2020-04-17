@@ -190,6 +190,7 @@ ul li:hover ul li {
     width: 35%;
     transition: 0.1s ease-in;
     z-index: 2;
+    align-items: center;
   }
   ul li ul li {
     display: none;

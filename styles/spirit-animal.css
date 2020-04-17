@@ -45,6 +45,7 @@ button:hover {
   height: 300px;
   margin-bottom: 2rem;
   object-fit: contain;
+  animation: fade-in 1s ease-in;
 }
 
 h3 {
@@ -97,5 +98,15 @@ h4 {
 @media (min-width: 1000px) {
   .spirit-animal-container {
     max-width: 60%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
