@@ -1,3 +1,5 @@
+// DOM MANIPULATION
+
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".main-nav");
 const button = document.querySelector(".spirit-animal-button");
@@ -8,6 +10,8 @@ hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
   hamburger.classList.toggle("toggle");
 });
+
+// OBJECT THAT I'VE CREATED FOR DATA RENDERING ON THE BROWSER
 
 const lion = {
   info:
@@ -173,11 +177,15 @@ const swan = {
 A black swan in dreams symbolizes mysterious unknown. It is a representation of something forbidden, but alluring. These mysteries are within us and waiting to be set free.`,
 };
 
+// DEFAULT DISPLAY ON THE WEB BROWSER FOR THE SPIRIT ANIMAL APPLICATION SO IT WONT BE EMPTY.
+
 const displayDefault = () => {
   spiritAnimalContainer.innerHTML = `
   <h3>Choose A Spirit Animal From The Option Above</h3>
   `;
 };
+
+// THE TEMPLATE TO DISPLAY THE SELECTED ANIMAL'S DATA INTO THE BROWSER
 
 const displayAnimal = (animal) => {
   spiritAnimalContainer.innerHTML = `
@@ -197,6 +205,8 @@ const displayAnimal = (animal) => {
   </div>
   `;
 };
+
+// IF STATEMENTS THAT ALLOW THE APPLICATION TO DISPLAY A CERTAIN ANIMAL GIVEN THE CONDITION
 
 const selectAnimal = () => {
   if (spiritAnimalBox.value === "lion") {
@@ -223,6 +233,8 @@ const selectAnimal = () => {
     displayAnimal(swan);
   }
 };
+
+// EVENT LISTENER THAT TRIGGERS WHEN THE SUBMIT BUTTON IS BEING CLICKED
 
 button.addEventListener("click", () => {
   selectAnimal();
