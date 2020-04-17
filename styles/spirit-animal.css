@@ -45,7 +45,7 @@ button:hover {
   height: 300px;
   margin-bottom: 2rem;
   object-fit: contain;
-  animation: fade-in 1s ease-in;
+  animation: fade-in 0.5s ease-in;
 }
 
 h3 {
@@ -95,6 +95,10 @@ h4 {
   opacity: 1;
 }
 
+.animal-content {
+  animation: entrance 0.3s ease-in;
+}
+
 @media (min-width: 1000px) {
   .spirit-animal-container {
     max-width: 60%;
@@ -108,5 +112,15 @@ h4 {
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes entrance {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
   }
 }

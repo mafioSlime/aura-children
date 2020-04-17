@@ -182,6 +182,7 @@ const displayDefault = () => {
 const displayAnimal = (animal) => {
   spiritAnimalContainer.innerHTML = `
   <img src=${animal.image} alt=${animal.name}> 
+  <div class="animal-content">
   <h3>${animal.name}</h3>
   <p class="animal-info">${animal.info}</p>
   <h4>${animal.name} Symbolizes:</h4>
@@ -193,7 +194,7 @@ const displayAnimal = (animal) => {
   </ul>
   <h4>${animal.name} In Your Dream Meaning:</h4>
   <p class="animal-dream">${animal.dream}</p>
-  
+  </div>
   `;
 };
 
